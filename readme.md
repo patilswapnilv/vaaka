@@ -4,7 +4,7 @@ It is all about the balance in life and in writing.
 
 ## About Vaaka
 
-Vaaka is a child theme of [Saga](http://themehybrid.com/themes/saga). It is ment to make publishing your written word fun and easy.
+Vaaka is a child theme of [Saga](http://themehybrid.com/themes/saga). It is meant to make publishing your written word fun and easy.
 
 ## Copyright and License
 
