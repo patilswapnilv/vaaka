@@ -11,8 +11,8 @@
 add_action( 'after_setup_theme', 'vaaka_theme_setup' );
 
 /**
- * Setup function.  All child themes should run their setup within this function.  The idea is to add/remove 
- * filters and actions after the parent theme has been set up.  This function provides you that opportunity.
+ * Setup function. All child themes should run their setup within this function. The idea is to add/remove 
+ * filters and actions after the parent theme has been set up. This function provides you that opportunity.
  *
  * @since  1.0.0
  * @access public
@@ -56,7 +56,9 @@ function vaaka_theme_setup() {
 	 */
 	add_filter( 'theme_mod_color_primary', 'vaaka_color_primary' );
 	
-	/* Add child theme fonts to editor styles. */
+	/* 
+	 * Add child theme fonts to editor styles.
+	 */
 	add_editor_style( vaaka_fonts_url() );
 	
 }
@@ -93,10 +95,10 @@ function vaaka_color_primary( $hex ) {
  */
 function vaaka_scripts() {
 	
-	/* Dequeue parent fonts. */
+	/* Dequeue parent theme fonts. */
 	wp_dequeue_style( 'saga-fonts' );
 	
-	/* Enqueue fonts. */
+	/* Enqueue child themes fonts. */
 	wp_enqueue_style( 'vaaka-fonts', vaaka_fonts_url(), array(), null );
 	
 }
@@ -114,7 +116,7 @@ function vaaka_custom_header_fonts() {
 add_action( 'admin_print_styles-appearance_page_custom-header', 'vaaka_custom_header_fonts' );
 
 /**
- * Return the Google font stylesheet URL
+ * Return the Google font stylesheet URL.
  *
  * @since  1.0.0
  * @return string
