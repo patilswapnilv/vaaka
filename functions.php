@@ -29,7 +29,7 @@ function vaaka_theme_setup() {
 		'custom-background',
 		array(
 			'default-color' => '343a40',
-			'default-image' => '',
+			'default-image' => ''
 		)
 	);
 
@@ -42,8 +42,7 @@ function vaaka_theme_setup() {
 		'custom-header', 
 		array(
 			'default-text-color' => 'dadada',
-			'default-image'      => '',
-			'random-default'     => false,
+			'default-image'      => ''
 		)
 	);
 
